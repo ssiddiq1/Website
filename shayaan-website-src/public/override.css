@@ -1,0 +1,17 @@
+// This file contains custom CSS to override the Manus attribution
+// Add to public/override.css
+
+.manus-attribution {
+  display: none !important;
+}
+
+/* Hide any elements with the text "Made with Manus" */
+a[href*="manus"], 
+div[class*="manus"], 
+span[class*="manus"],
+*:has(> *:contains("Made with Manus")) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
